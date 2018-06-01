@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-US">
+ <title>test linking</title>
+ <topicref href="topic_a.dita"/>
+ <topicref href="topic_b.dita"/>
+ <topicref href="topic_c.dita"/>
+ <topicref href="topic_d.dita"/>
+ <topicref href="reference_1.dita"/>
+ <topicref href="reference_2.dita"/>
+ <topicref href="task_a.dita"/>
+ <topicref href="task_b.dita"/>
+ <reltable>
+  <relheader>
+   <relcolspec></relcolspec>
+   <relcolspec></relcolspec>
+  </relheader>
+  <relrow><relcell linking="sourceonly">
+    <topicref href="topic_a.dita"/>
+   </relcell><relcell linking="targetonly">
+    <topicref href="reference_1.dita"/>
+    <topicref href="task_a.dita"/>
+   </relcell></relrow>
+  <relrow><relcell linking="sourceonly">
+    <topicref href="topic_b.dita"/>
+   </relcell><relcell linking="targetonly">
+    <topicref href="topic_d.dita"/>
+    <topicref href="reference_2.dita"/>
+    <topicref href="task_b.dita"/>
+   </relcell></relrow>
+ </reltable>
+</map>
